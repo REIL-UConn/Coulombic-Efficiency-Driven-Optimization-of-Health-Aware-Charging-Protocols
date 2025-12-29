@@ -1,0 +1,7 @@
+# Excel files
+*.xlsx
+*.xls
+*.xlsm
+*.xlst
+*.xltx
+*.pkl
