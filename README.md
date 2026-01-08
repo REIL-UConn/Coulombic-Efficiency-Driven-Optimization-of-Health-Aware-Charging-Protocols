@@ -12,11 +12,8 @@ The workflow combines experimentally derived SOC-sweep Coulombic efficiency (CE)
 A physics-based single-particle model (eSPM) is also included for validation and plating-constrained charging analysis.
 
 ---
-
-## Graphical Abstract (placeholder)
-
 <p align="center">
-  <img src="assets/Graphical_Abstract.png" alt="Graphical Abstract" width="900"/>
+  <img src="Graphical_Abstract.png" alt="Graphical Abstract" width="900"/>
 </p>
 
 ---
