@@ -20,13 +20,19 @@ A physics-based single-particle model (eSPM) is also included for validation and
 ## Repository Structure
 
 ### `data/`
-SOC-sweep experimental datasets.
-- `SOC sweep data (raw)/`: raw experimental SOC-sweep measurements  
-- `SOC sweep data (processed)/`: processed CE data used in the main analysis  
-- `SOC sweep data (processed)_v2/`: updated/alternative processed dataset
+SOC-sweep experimental datasets used for Coulombic efficiency (CE) extraction and optimization.  
+**Note:** Due to size limitation, the full datasets are **not included** in this repository. please refer to **datasets placeholder**
+
+Expected directory structure:
+- `SOC sweep data (raw)/`  
+  Raw experimental SOC-sweep measurements.
+- `SOC sweep data (processed)/`  
+  Processed CE data used in the main analysis.
+  
+The processed datasets contain SOC-resolved CE values extracted from SOC-sweep experiments. 
 
 ### `notebooks/`
-Jupyter notebooks used to generate all results and figures in the paper.
+Jupyter notebooks used to generate key results and figures in the paper.
 - `01_preprocessing.ipynb`: SOC-sweep preprocessing and CE extraction  
 - `02_threshold_based_method.ipynb`: CE-threshold-based charging protocol optimization  
 - `03_surrogate_model_based_method.ipynb`: surrogate-based CE modeling and optimization
