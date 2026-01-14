@@ -19,16 +19,17 @@ A physics-based single-particle model (eSPM) is also included for validation and
 ## Repository Structure
 
 ### `data/`
-SOC-sweep experimental datasets used for CE extraction and optimization.  
+SOC-sweep and benchmark experimental datasets should be under this folder.  
 **Note:** Due to size limitation, the full datasets are **not included** in this repository. please refer to **datasets placeholder**
 
 Expected directory structure:
 - `SOC_Sweep_Data (Raw)/`  
   Raw experimental SOC-sweep measurements.
 - `SOC_Sweep_Data (Processed)/`  
-  Processed CE data used in the main analysis.
-  
-The processed datasets contain SOC-resolved CE values extracted from SOC-sweep experiments. 
+  The processed data contain SOC-resolved CE values extracted from SOC-sweep experiments. 
+- `Benchmark_Tests_Batch{1-5}/`
+  Within each `Benchmark_Tests_Batch*` directory, data are further organized into cycle and RPT folders. Each cycle folder contains data
+  from four consecutive charge–discharge cycles executed using the same charging protocol, followed by an RPT.
 
 ### `notebooks/`
 Jupyter notebooks used to generate key results and figures in the paper.
