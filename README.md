@@ -19,13 +19,13 @@ A physics-based single-particle model (eSPM) is also included for validation and
 ## Repository Structure
 
 ### `data/`
-SOC-sweep experimental datasets used for Coulombic efficiency (CE) extraction and optimization.  
+SOC-sweep experimental datasets used for CE extraction and optimization.  
 **Note:** Due to size limitation, the full datasets are **not included** in this repository. please refer to **datasets placeholder**
 
 Expected directory structure:
-- `SOC sweep data (raw)/`  
+- `SOC_Sweep_Data (Raw)/`  
   Raw experimental SOC-sweep measurements.
-- `SOC sweep data (processed)/`  
+- `SOC_Sweep_Data (Processed)/`  
   Processed CE data used in the main analysis.
   
 The processed datasets contain SOC-resolved CE values extracted from SOC-sweep experiments. 
@@ -35,6 +35,7 @@ Jupyter notebooks used to generate key results and figures in the paper.
 - `01_preprocessing.ipynb`: SOC-sweep preprocessing and CE extraction  
 - `02_threshold_based_method.ipynb`: CE-threshold-based charging protocol optimization  
 - `03_surrogate_model_based_method.ipynb`: surrogate-based CE modeling and optimization
+- `04_benchmark_results.ipynb`: comparison of capacity trajectories and trade-off between charge speed and average lifetime
 
 ### `utils/`
 Core Python utilities shared across notebooks.
@@ -42,6 +43,8 @@ Core Python utilities shared across notebooks.
 - `soc_sweep_analysis.py`: CE computation, normalization, and SOC-based analysis  
 - `threshold_boundaries.py`: CE-threshold extraction and SOC boundary definition  
 - `surrogate_models.py`: surrogate fitting (polynomial, GPR), prediction, and plotting utilities
+- `benchmark_capacity.py`: collecting capacity trajectory data for each strategy
+- `benchmark_speed_lifetime.py`: collecting mean lifetime and charging speed for each strategy
 
 ### `single_particle_model/`
 Physics-based model (PBM) implemented in MATLAB for plating-aware validation.
