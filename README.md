@@ -1,6 +1,6 @@
 # Coulombic Efficiency-Driven Optimization of Health-Aware Charging Protocols: An Experimental Investigation on LCO/Graphite Lithium-Ion Cells
 
-This repository contains the code used in the paper **DOI to be added**
+This repository contains the code used in the paper **[DOI](https://doi.org/10.1039/D5TA09520D)**
 
 The workflow combines experimentally derived SOC-sweep Coulombic efficiency (CE) data with two complementary optimization strategies:
 
@@ -20,7 +20,7 @@ A physics-based single-particle model (eSPM) is also included for validation and
 
 ### `data/`
 SOC-sweep and benchmark experimental datasets should be under this folder.  
-**Note:** Due to size limitation, the full datasets are **not included** in this repository. please refer to **datasets placeholder**
+**Note:** Due to size limitation, the full datasets are **not included** in this repository. please refer to **https://digitalcommons.lib.uconn.edu/reil_datasets/4/**
 
 Expected directory structure:
 - `SOC_Sweep_Data (Raw)/`  
@@ -61,8 +61,14 @@ Physics-based model (PBM) implemented in MATLAB for plating-aware validation.
 
 If you use this code, please cite:
 
-> **Coulombic Efficiency-Driven Optimization of Health-Aware Charging Protocols: An Experimental Investigation on LCO/Graphite Lithium-Ion Cells**  
-> *Authors*, Year. *(Journal / DOI TBD)*
+> @article{navidi2026coulombic,
+  title={Coulombic Efficiency-Driven Optimization of Health-Aware Charging Protocols: An Experimental Investigation on LCO/Graphite Lithium-Ion Cells},
+  author={Navidi, Sina and Das, Sourav and Nowacki, Benjamin and Shrotriya, Pranav and Xu, Jun and Hu, Chao},
+  journal={Journal of Materials Chemistry A},
+  year={2026},
+  publisher={Royal Society of Chemistry}
+  }  
+
 
 ---
 
